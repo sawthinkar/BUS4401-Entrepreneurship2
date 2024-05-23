@@ -1,51 +1,137 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default browser styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Body styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header styling */
 header {
-    background-color: #ff001e;
+    background: linear-gradient(to right, #0073e6, #00aaff);
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 2rem 1rem;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main content styling */
 main {
-    padding: 20px;
+    padding: 1rem;
 }
 
+/* Section styling */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #0066cc;
+section h2 {
+    color: #0073e6;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
-img {
+section p, section ul {
+    margin-bottom: 1rem;
+}
+
+/* Image styling */
+section img {
     max-width: 100%;
-    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
+/* Blockquote styling */
 blockquote {
-    background-color: #e9f5ff;
-    border-left: 5px solid #0066cc;
-    margin: 10px 0;
-    padding: 10px;
+    background: #e0f7ff;
+    border-left: 5px solid #0073e6;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
+/* Footer styling */
 footer {
-    background-color: #0066cc;
+    background: linear-gradient(to right, #0073e6, #00aaff);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.75rem;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+/* Comment section styling */
+#comments-section div {
+    background: #e0f7ff;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    word-wrap: break-word;
 }
